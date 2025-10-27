@@ -4,7 +4,7 @@ The rise of large language models for code has reshaped software development. Au
 
 ## Dataset 
 
-We release the dataset used for analysis on [HuggingFace](). 
+We publish the dataset along with the code change results on [HuggingFace](https://huggingface.co/datasets/askancv/agents_activity). Instructions for loading each subset to be used in reproducing both analyses are also provided there.
 
 ## Code 
 
