@@ -29,7 +29,7 @@ for contribution in scraper.scrape_prs(start_date = start_date, end_date = end_d
 Example of how to run the commit/comment/review/issue scraper (*github_scraper_rest.py*) based on the obtained pull request IDs: 
 
 ```python
-# First load the pull request dataset as shown on the HuggingFace page, then split the "id" column into batches and convert each back into a comma delimited string.
+# First load the pull request dataset as shown on the HuggingFace page, then split the "id" column into batches and convert each batch into a comma delimited string.
 ...
 
 for contribution in scraper.scrape_prs(pr_ids = pull_request_ids)
