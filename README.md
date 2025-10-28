@@ -9,4 +9,4 @@ We plan to add an opt-out mechanism for developers who want their contributions 
 
 ## Code 
 
-The code for dataset scraping and analysis is available in the *data_scraper*, *activity_analysis*, and *code_change_analysis* directories. 
+The code for dataset scraping and analysis is available in the *data_scraper*, *activity_analysis*, and *code_change_analysis* directories. Instructions on how to run each script can be found in the respective directories. 
