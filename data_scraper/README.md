@@ -15,10 +15,15 @@ for contribution in scraper.scrape_prs(start_date = start_date, end_date = end_d
 ```
 
 ```tokens```: your github tokens, you can pass more than one, the token manager will cycle through them whenever limits are hit 
+
 ```batch_size```: number of pull requests to scraper per page 
+
 ```start_date```: start date of the scraping interval 
+
 ```end_date```: end date of the scraping interval
+
 ```filter```: signal used to filter pull requests according to each agent (all signals are presented in the paper)
+
 ```total```: total amount of pull requests to be scraped
 
 Example of how to run the commit/comment/review/issue scraper (*github_scraper_rest.py*) based on the obtained pull request IDs: 
