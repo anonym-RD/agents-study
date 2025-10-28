@@ -14,7 +14,7 @@ for contribution in scraper.scrape_prs(start_date = start_date, end_date = end_d
     print(contribution)
 ```
 
-```tokens```: your github tokens, you can pass more than one, the token manager will cycle through them whenever limits are hit 
+```tokens```: your GitHub tokens, you can pass more than one, the token manager will cycle through them whenever limits are hit 
 
 ```batch_size```: number of pull requests to scraper per page 
 
