@@ -53,6 +53,6 @@ for contribution in scraper.scrape_prs(start_date = start_date, end_date = end_d
     print(contribution)
 ```
 
-```filter```: we prepand "-" to the signal to exclude copilot pull requests. This can be chanined with all the other signals presented in the paper
+```filter```: we prepend "-" to the signal to exclude copilot pull requests. This can be chanined with all the other signals presented in the paper
 
 ```interval_span```: length of the intervals in which a day is split. 3 means that a day is split into 3-hour intervals
