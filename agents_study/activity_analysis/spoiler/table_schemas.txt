@@ -1,0 +1,169 @@
+============================================================
+Table: Comments
+============================================================
+
+  id                             String
+  pr_id                          String
+  url                            String
+  body                           String
+  created_at                     String
+  is_minimized                   Boolean
+  minimized_reason               String
+  last_edited_at                 String
+  published_at                   String
+  updated_at                     String
+  author                         Struct({'id': Null, 'login': String, 'name': Null, 'typename': String, 'url': String})
+
+
+============================================================
+Table: Commits
+============================================================
+
+  id                             String
+  sha                            String
+  pr_id                          String
+  url                            String
+  committed_date                 String
+  additions                      Int64
+  deletions                      Int64
+  authored_date                  String
+  message_body                   String
+  message_headline               String
+  author_count                   Int64
+  committer                      Struct({'email': String, 'name': String})
+  changed_files                  Int64
+  authors                        List(Struct({'email': String, 'name': String}))
+
+
+============================================================
+Table: Issues
+============================================================
+
+  id                             String
+  pr_id                          String
+  url                            String
+  title                          String
+  body                           String
+  created_at                     String
+  locked                         Boolean
+  number                         Int64
+  state                          String
+  tracked_issues_count           Int64
+  label_count                    Int64
+  last_edited_at                 String
+  published_at                   String
+  updated_at                     String
+  issue_type                     Struct({'description': String, 'name': String})
+  labels                         List(Struct({'description': String, 'name': String}))
+  state_reason                   String
+  author                         Struct({'id': Null, 'login': String, 'name': Null, 'typename': String, 'url': String})
+  pr_ids                         Null
+  prs_closing_issue              Int64
+
+
+============================================================
+Table: PullRequests
+============================================================
+
+  id                             String
+  title                          String
+  url                            String
+  number                         Int64
+  body                           String
+  state                          String
+  created_at                     String
+  is_draft                       Boolean
+  changed_files                  Int64
+  is_cross_repository            Boolean
+  locked                         Boolean
+  is_in_merge_queue              Null
+  additions                      Int64
+  deletions                      Int64
+  author                         Struct({'id': Null, 'login': String, 'name': Null, 'typename': String, 'url': String})
+  label_count                    Int64
+  base_repository                Struct({'id': String, 'name': String, 'url': String})
+  head_repository                Struct({'id': String, 'name': String, 'url': String})
+  timeline_count                 Int64
+  merged_at                      String
+  closed_at                      String
+  updated_at                     String
+  last_edited_at                 String
+  published_at                   String
+  review_decision                String
+  head_ref_name                  String
+  head_ref_oid                   String
+  timeline_items                 Null
+  base_ref_name                  String
+  base_ref_oid                   String
+  comments_count                 Int64
+  reviews_count                  Int64
+  commits_count                  Int64
+  files                          List(Struct({'additions': Int64, 'change_type': String, 'deletions': Int64, 'path': String}))
+  assignees_count                Int64
+  closing_issues_count           Int64
+  author_association             String
+  labels                         List(Struct({'description': String, 'name': String}))
+  active_lock_reason             String
+
+
+============================================================
+Table: Repositories
+============================================================
+
+  id                             String
+  pr_id                          String
+  role                           String
+  name                           String
+  name_with_owner                String
+  url                            String
+  ssh_url                        String
+  stargazer_count                Int64
+  is_fork                        Boolean
+  is_archived                    Boolean
+  is_disabled                    Null
+  is_empty                       Null
+  is_in_organization             Boolean
+  is_locked                      Null
+  is_private                     Null
+  is_mirror                      Null
+  is_template                    Boolean
+  is_user_configuration_repository Boolean
+  fork_count                     Int64
+  forking_allowed                Boolean
+  created_at                     String
+  visibility                     String
+  owner                          Struct({'id': String, 'login': String, 'name': Null, 'typename': String, 'url': String})
+  topics_count                   Int64
+  languages                      List(String)
+  language_count                 Int64
+  watchers                       Int64
+  license_info                   String
+  default_brach                  String
+  repository_topics              List(String)
+  primary_language               String
+  lock_reason                    Null
+  pushed_at                      String
+  updated_at                     String
+  archived_at                    String
+  description                    String
+
+
+============================================================
+Table: Reviews
+============================================================
+
+  id                             String
+  pr_id                          String
+  url                            String
+  body                           String
+  created_at                     String
+  is_minimized                   Boolean
+  state                          String
+  updated_at                     String
+  last_edited_at                 String
+  published_at                   String
+  submitted_at                   String
+  minimized_reason               String
+  author                         Struct({'id': Null, 'login': String, 'name': Null, 'typename': String, 'url': String})
+
+
